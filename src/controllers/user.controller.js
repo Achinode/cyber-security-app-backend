@@ -16,10 +16,10 @@ exports.signUp = async (req, res) => {
             message: "Name, Password and Email are required!",
         });
     }
-    if (password.length < 6) {
+    if (password.length < 8) {
         return res.status(400).json({
             status: "ERROR",
-            message: "Password should contains at least 6 characters!",
+            message: "Password should contains at least 8 characters!",
         });
     }
     try {
