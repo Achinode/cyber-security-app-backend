@@ -12,7 +12,6 @@ const quizSchema = new Schema(
                         answerID: {
                             type: Number,
                             required: true,
-                            unique: true,
                         },
                         answer: { type: String, required: true },
                     },
